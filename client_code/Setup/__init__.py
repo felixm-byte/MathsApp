@@ -15,6 +15,9 @@ class Setup(SetupTemplate):
 
   def submit_click(self, **event_args):
     user = anvil.users.get_user()
-    course = self.course.selected_value
-    username = self.username.text
-    open_form('Dashboard')
+    #Returns true if accepted changes by server
+    OK = anvil.server.call('configure_user_account_properties', user['email'], self.username.text, self.course.selected_value)
+    if OK:
+      open_form('Dashboard')
+    else:
+      alert(OK)

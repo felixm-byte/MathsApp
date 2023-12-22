@@ -5,7 +5,7 @@ unique_ids:
     Setup: '1703274223028714948465708.3182'
   modules: {}
   server_modules:
-    ServerModule1: '1703279824005386363599699.51074'
+    Account: '1703279824005386363599699.51074'
   assets:
     standard-page.html: 42HCW3G5VPUYPRMVRZXVXQUNSP67EKAY
     theme.css: FOR5XJXHKR4DE5N6G3UOGX6RYIUSINIC
